@@ -1,6 +1,7 @@
 package fr.devops.mediareview.ui.slideshow;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,13 +23,17 @@ public class SlideshowFragment extends Fragment {
         SlideshowViewModel slideshowViewModel =
                 new ViewModelProvider(this).get(SlideshowViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        try {
+            binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        } catch (Exception e){
+            Log.e("SlideshowFragment","onCreateView",e);
+            throw e;
+        }
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        System.out.println("coucou");
-        final BadgeUtilisateurView usernameView = binding.badgeUsername;
+        final BadgeUtilisateurView usernameView = binding.badge;
         slideshowViewModel.getUsername().observe(getViewLifecycleOwner(), usernameView::setNomUtilisateur);
 
         return root;
