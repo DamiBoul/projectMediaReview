@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import fr.devops.mediareview.composants.badgeUtilisateur.BadgeUtilisateurView;
 import fr.devops.mediareview.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
@@ -26,6 +27,10 @@ public class SlideshowFragment extends Fragment {
 
         final TextView textView = binding.textSlideshow;
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        System.out.println("coucou");
+        final BadgeUtilisateurView usernameView = binding.badgeUsername;
+        slideshowViewModel.getUsername().observe(getViewLifecycleOwner(), usernameView::setNomUtilisateur);
+
         return root;
     }
 
