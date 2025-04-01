@@ -22,8 +22,8 @@
 
     <fr.devops.mediareview.composants.mediaImage.MediaImageView
         android:id="@+id/imageMedia"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/media_image_width_s"
+        android:layout_height="@dimen/media_image_height_s"
         app:layout_constraintBottom_toTopOf="@+id/text_gallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
