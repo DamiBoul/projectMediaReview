@@ -22,8 +22,8 @@ public class MediaImageView extends FrameLayout {
     }
 
     private void init(Context context){
-        inflate(context, R.layout.badge_layout, this);
-        this.titreMedia = findViewById(R.id.badge_username);
+        inflate(context, R.layout.media_image_layout, this);
+        this.titreMedia = findViewById(R.id.titre_media);
     }
 
     public void setTitreMedia(String titreMedia){
