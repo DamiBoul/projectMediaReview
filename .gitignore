@@ -2,6 +2,9 @@
 .gradle
 ./gradle
 gradle
+gradle/wrapper
+gradle/libs.versions.toml
+gradle/*
 /local.properties
 .idea
 ./.idea
