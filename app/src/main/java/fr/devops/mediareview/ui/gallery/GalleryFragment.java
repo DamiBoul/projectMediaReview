@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import fr.devops.mediareview.composants.mediaImage.MediaImageView;
+import fr.devops.mediareview.composants.notes.NotesEtoilesView;
 import fr.devops.mediareview.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
@@ -33,8 +34,11 @@ public class GalleryFragment extends Fragment {
                 @Override
                 public void onClick(View view){
                     mediaImageView.toggleVisibility();
-        }
+                }
         });
+        final NotesEtoilesView notesEtoilesView = binding.note;
+        galleryViewModel.getNote().observe(getViewLifecycleOwner(), notesEtoilesView::setEvaluation);
+
         return root;
     }
 
