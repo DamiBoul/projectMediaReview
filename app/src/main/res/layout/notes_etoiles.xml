@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/etoile_1"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
@@ -17,7 +17,7 @@
 
     <ImageView
         android:id="@+id/etoile_2"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
 
     <ImageView
         android:id="@+id/etoile_3"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
 
     <ImageView
         android:id="@+id/etoile_4"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
 
     <ImageView
         android:id="@+id/etoile_5"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
 
     <ImageView
         android:id="@+id/coeur"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="36dp"
         android:visibility="invisible"

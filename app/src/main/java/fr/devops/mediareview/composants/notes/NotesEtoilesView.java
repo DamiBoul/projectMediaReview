@@ -29,12 +29,24 @@ public class NotesEtoilesView extends FrameLayout {
     private void init(Context context){
         inflate(context, R.layout.notes_etoiles, this);
         etoilesList = new ArrayList<>(5);
-        etoilesList.set(0, findViewById(R.id.etoile_1));
-        etoilesList.set(1, findViewById(R.id.etoile_2));
-        etoilesList.set(2, findViewById(R.id.etoile_3));
-        etoilesList.set(3, findViewById(R.id.etoile_4));
-        etoilesList.set(4, findViewById(R.id.etoile_5));
+        etoilesList.add(findViewById(R.id.etoile_1));
+        etoilesList.add(findViewById(R.id.etoile_2));
+        etoilesList.add(findViewById(R.id.etoile_3));
+        etoilesList.add(findViewById(R.id.etoile_4));
+        etoilesList.add(findViewById(R.id.etoile_5));
         this.coeur = findViewById(R.id.coeur);
+    }
+
+    public void setEvaluation(Integer eval){
+        for (int i=0;i<5;i++){
+            if(eval / 2 > i){
+                etoilesList.get(i).setImageResource(R.drawable.etoile_pleine);
+            }
+            else{
+                etoilesList.get(i).setImageResource(R.drawable.etoile_vide);
+            }
+        }
+        if(eval % 2 == 1) etoilesList.get(eval / 2).setImageResource(R.drawable.etoile_demi);
     }
 
 }

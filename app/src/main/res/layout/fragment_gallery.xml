@@ -28,4 +28,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <fr.devops.mediareview.composants.notes.NotesEtoilesView
+        android:id="@+id/note"
+        android:layout_width="@dimen/note_width_s"
+        android:layout_height="@dimen/note_height_s"
+        app:layout_constraintBottom_toTopOf="@+id/imageMedia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
