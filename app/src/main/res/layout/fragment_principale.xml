@@ -19,4 +19,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
+        android:id="@+id/media_test1"
+        android:layout_width="@dimen/media_image_width_l"
+        android:layout_height="@dimen/media_image_height_l"
+        app:layout_constraintBottom_toTopOf="@+id/text_principale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/media_test2"
+        app:type_note="ETOILES" />
+
+    <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
+        android:id="@+id/media_test2"
+        android:layout_width="@dimen/media_image_width_l"
+        android:layout_height="@dimen/media_image_height_l"
+        app:layout_constraintBottom_toTopOf="@+id/text_principale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:type_note="MOYENNE" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MediaAnnoteView">
+        <attr name="type_note">
+            <enum name="ETOILES" value="ETOILES"/>
+            <enum name="MOYENNE" value="MOYENNE"/>
+        </attr>
+    </declare-styleable>
+</resources>
