@@ -10,6 +10,7 @@ import java.util.Objects;
 import fr.devops.mediareview.R;
 import fr.devops.mediareview.composants.notes.NotesEtoilesView;
 import fr.devops.mediareview.composants.notes.NotesMoyenneView;
+import fr.devops.mediareview.constants.AttributesConstants;
 
 public class MediaAnnoteView extends FrameLayout {
 
@@ -19,9 +20,9 @@ public class MediaAnnoteView extends FrameLayout {
 
     private NotesMoyenneView notesMoyenneView;
 
-    public MediaAnnoteView(Context context, AttributeSet attrs, int defStyle){
-        super(context, attrs, defStyle);
-        init(context, attrs, defStyle);
+    public MediaAnnoteView(Context context, AttributeSet attrs){
+        super(context, attrs);
+        init(context, attrs, 1);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyle){
@@ -34,10 +35,10 @@ public class MediaAnnoteView extends FrameLayout {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MediaAnnoteView, defStyle, 0);
 
         String str = a.getString(R.styleable.MediaAnnoteView_type_note);
-        if(Objects.equals(str, "ETOILES")){
+        if(Objects.equals(str, AttributesConstants.MEDIA_ANNOTE_ETOILES)){
             this.notesMoyenneView.setVisibility(INVISIBLE);
         } else {
-            this.notesEtoilesView.setVisibility(VISIBLE);
+            this.notesEtoilesView.setVisibility(INVISIBLE);
         }
 
         a.recycle();
