@@ -10,11 +10,15 @@ public class GalleryViewModel extends ViewModel {
 
     private final MutableLiveData<String> titreMedia;
 
+    private final MutableLiveData<Integer> noteEtoile;
+
     public GalleryViewModel() {
         mText = new MutableLiveData<>();
         titreMedia = new MutableLiveData<>();
+        noteEtoile = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
         titreMedia.setValue("SuperMario64");
+        noteEtoile.setValue(3);
     }
 
     public LiveData<String> getText() {
@@ -22,4 +26,6 @@ public class GalleryViewModel extends ViewModel {
     }
 
     public LiveData<String> getTitreMedia(){ return titreMedia;}
+
+    public LiveData<Integer> getNote(){ return noteEtoile;}
 }
