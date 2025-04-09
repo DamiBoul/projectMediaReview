@@ -5,6 +5,8 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+import androidx.annotation.DrawableRes;
+
 import java.util.Objects;
 
 import fr.devops.mediareview.R;
@@ -55,5 +57,7 @@ public class MediaAnnoteView extends FrameLayout {
     public void setCoeur(Boolean bool){
         this.notesEtoilesView.setCoeur(bool);
     }
+
+    public void setImage(@DrawableRes int resId){this.mediaImageView.getJeu().setImageResource(resId);}
 
 }

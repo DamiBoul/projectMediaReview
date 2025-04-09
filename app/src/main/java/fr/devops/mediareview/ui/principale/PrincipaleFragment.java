@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import fr.devops.mediareview.R;
 import fr.devops.mediareview.composants.mediaImage.MediaAnnoteView;
 import fr.devops.mediareview.databinding.FragmentPrincipaleBinding;
 import fr.devops.mediareview.ui.principale.PrincipaleViewModel;
@@ -31,9 +32,11 @@ public class PrincipaleFragment extends Fragment {
 
         final MediaAnnoteView mediaAnnoteView1 = binding.mediaTest1;
         principaleViewModel.getMoyenne().observe(getViewLifecycleOwner(), mediaAnnoteView1::setMoyenne);
+        mediaAnnoteView1.setImage(R.drawable.default_image_media);
 
         final MediaAnnoteView mediaAnnoteView2 = binding.mediaTest2;
         principaleViewModel.getEval().observe(getViewLifecycleOwner(), mediaAnnoteView2::setEvaluation);
+        mediaAnnoteView2.setImage(R.drawable.default_image_media);
 
         return root;
     }
