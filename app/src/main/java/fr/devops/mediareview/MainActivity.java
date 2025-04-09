@@ -18,16 +18,21 @@ import fr.devops.mediareview.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Configuration pour la barre d'action
     private AppBarConfiguration mAppBarConfiguration;
+    // Instance de View Binding pour lier les vues XML aux objets Java
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Initialisation du View Binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
+        // Définir le contenu de l'activité avec la vue racine du View Binding
         setContentView(binding.getRoot());
 
+        // Définir la barre d'outils comme barre d'action
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
