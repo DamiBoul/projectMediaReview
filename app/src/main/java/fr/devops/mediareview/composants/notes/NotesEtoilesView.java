@@ -49,4 +49,12 @@ public class NotesEtoilesView extends FrameLayout {
         if(eval % 2 == 1) etoilesList.get(eval / 2).setImageResource(R.drawable.etoile_demi);
     }
 
+    public void setCoeur(Boolean bool){
+        if (bool) {
+            coeur.setVisibility(VISIBLE);
+        } else {
+            coeur.setVisibility(INVISIBLE);
+        }
+    }
+
 }

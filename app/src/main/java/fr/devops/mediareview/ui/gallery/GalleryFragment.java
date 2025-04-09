@@ -38,6 +38,12 @@ public class GalleryFragment extends Fragment {
         });
         final NotesEtoilesView notesEtoilesView = binding.note;
         galleryViewModel.getNote().observe(getViewLifecycleOwner(), notesEtoilesView::setEvaluation);
+        notesEtoilesView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                notesEtoilesView.setCoeur(true);
+            }
+        });
 
         return root;
     }

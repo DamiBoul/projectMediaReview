@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="note_height_s">20dp</dimen>
-    <dimen name="note_width_s">100dp</dimen>
+    <dimen name="note_width_s">150dp</dimen>
 </resources>
