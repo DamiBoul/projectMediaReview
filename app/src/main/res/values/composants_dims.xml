@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Bordure -->
+    <dimen name="bordure_s">12dp</dimen>
+    <dimen name="bordure_m">24dp</dimen>
+    <dimen name="bordure_l">36dp</dimen>
+
     <!-- Text sizes -->
     <dimen name="tt_grand_titre">36sp</dimen>
     <dimen name="tt_titre">24sp</dimen>
@@ -15,6 +20,10 @@
     <dimen name="media_image_width_m">150dp</dimen>
     <dimen name="media_image_height_l">300dp</dimen>
     <dimen name="media_image_width_l">225dp</dimen>
+
+    <!-- Badge utilisateur -->
+    <dimen name="badge_utilisateur_height">24dp</dimen>
+    <dimen name="badge_utilisateur_width">120p</dimen>
 
     <!-- Notes -->
     <dimen name="note_height_s">20dp</dimen>

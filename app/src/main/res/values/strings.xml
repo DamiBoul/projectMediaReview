@@ -14,4 +14,8 @@
     <!-- Strings pour l'écran principal. -->
     <string name="menu_principale">Écran principal</string>
     <string name="principale_populaire">Populaire en ce moment</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam leo. Nam facilisis tortor faucibus, porttitor risus quis, tincidunt mi. Donec fermentum urna sed diam facilisis, sit amet tempus ex congue. Proin vulputate molestie risus, vitae fermentum lectus ultrices eget. Nullam volutpat eros lectus, vel viverra nisi dictum ut. Quisque ut tempus diam, in pulvinar risus. Praesent tincidunt pulvinar ipsum, ut molestie enim lobortis sit amet. Curabitur pellentesque, neque id aliquam ullamcorper, lectus nibh mollis justo, at maximus nibh nisi id tellus. Vestibulum lorem sapien, pretium nec lectus vel, condimentum eleifend metus.
+\n
+Etiam non mauris dapibus, semper lorem et, facilisis arcu. Nunc id condimentum tellus. Quisque nec dolor mi. Curabitur gravida elit id posuere facilisis. Donec efficitur enim nec mollis ornare. Cras dui ante, feugiat quis risus ac, malesuada condimentum ipsum. Proin eu nisl ultricies, tempor ligula id, vehicula augue. Pellentesque convallis suscipit tempus. </string>
 </resources>
