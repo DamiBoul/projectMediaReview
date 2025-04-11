@@ -14,6 +14,8 @@ public class MediaImageView extends FrameLayout {
 
     private ImageView overlay;
 
+    private ImageView jeu;
+
     public MediaImageView(Context context) {
         super(context);
         this.init(context);
@@ -28,6 +30,7 @@ public class MediaImageView extends FrameLayout {
         inflate(context, R.layout.media_image_layout, this);
         this.titreMedia = findViewById(R.id.titre_media);
         this.overlay = findViewById(R.id.dark_overlay);
+        this.jeu = findViewById(R.id.imageView_media);
     }
 
     public void setTitreMedia(String titreMedia){
@@ -49,4 +52,6 @@ public class MediaImageView extends FrameLayout {
         }
 
     }
+
+    public ImageView getJeu(){return this.jeu;}
 }

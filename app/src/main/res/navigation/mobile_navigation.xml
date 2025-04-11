@@ -22,4 +22,10 @@
         android:name="fr.devops.mediareview.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_principale"
+        android:name="fr.devops.mediareview.ui.principale.PrincipaleFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_principale" />
 </navigation>
