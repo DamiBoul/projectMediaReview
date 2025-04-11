@@ -6,6 +6,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
+
 import fr.devops.mediareview.R;
 
 public class MediaImageView extends FrameLayout {
@@ -33,11 +35,7 @@ public class MediaImageView extends FrameLayout {
         this.jeu = findViewById(R.id.imageView_media);
     }
 
-    public void setTitreMedia(String titreMedia){
-        this.titreMedia.setText(titreMedia);
-    }
-
-    public void toggleVisibility(){
+    public void toggleOverlayVisibility(){
         if(this.titreMedia.getVisibility() == INVISIBLE){
             this.titreMedia.setVisibility(VISIBLE);
         }
@@ -53,5 +51,9 @@ public class MediaImageView extends FrameLayout {
 
     }
 
-    public ImageView getJeu(){return this.jeu;}
+    public void setTitreMedia(String titreMedia){
+        this.titreMedia.setText(titreMedia);
+    }
+
+    public void setImageResource(@DrawableRes int resId){this.jeu.setImageResource(resId);}
 }

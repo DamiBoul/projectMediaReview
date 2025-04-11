@@ -33,7 +33,7 @@ public class GalleryFragment extends Fragment {
         mediaImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view){
-                    mediaImageView.toggleVisibility();
+                    mediaImageView.toggleOverlayVisibility();
                 }
         });
         final NotesEtoilesView notesEtoilesView = binding.note;

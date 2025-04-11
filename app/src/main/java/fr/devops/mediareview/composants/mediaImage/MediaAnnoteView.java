@@ -58,6 +58,8 @@ public class MediaAnnoteView extends FrameLayout {
         this.notesEtoilesView.setCoeur(bool);
     }
 
-    public void setImage(@DrawableRes int resId){this.mediaImageView.getJeu().setImageResource(resId);}
+    public void setImage(@DrawableRes int resId){this.mediaImageView.setImageResource(resId);}
+
+    public void setTitreMedia(String titre){this.mediaImageView.setTitreMedia(titre);}
 
 }
