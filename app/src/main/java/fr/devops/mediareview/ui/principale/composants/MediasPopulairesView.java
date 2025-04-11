@@ -41,8 +41,4 @@ public class MediasPopulairesView extends FrameLayout {
     }
 
     public MediaAnnoteView getMediaByIdx(int idx){return listeMediaPopulaire.get(idx);}
-
-    public void searchMediaPopulaire(){
-        listeMediaPopulaire.iterator(); //TODO
-    }
 }
