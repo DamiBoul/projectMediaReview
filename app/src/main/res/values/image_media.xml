@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="media_image_height_s">100dp</dimen>
-    <dimen name="media_image_width_s">75dp</dimen>
-    <dimen name="media_image_height_m">200dp</dimen>
-    <dimen name="media_image_width_m">150dp</dimen>
-    <dimen name="media_image_height_l">300dp</dimen>
-    <dimen name="media_image_width_l">225dp</dimen>
-</resources>
