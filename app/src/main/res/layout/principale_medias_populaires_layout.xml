@@ -41,25 +41,32 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
+                app:type_note="MOYENNE"
                 tools:ignore="NestedWeights" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_2"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" />
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_3"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" />
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_4"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" >
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" >
 
             </fr.devops.mediareview.composants.mediaImage.MediaAnnoteView>
         </LinearLayout>
@@ -81,25 +88,32 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
+                app:type_note="MOYENNE"
                 tools:ignore="NestedWeights" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_6"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" />
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_7"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" />
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" />
 
             <fr.devops.mediareview.composants.mediaImage.MediaAnnoteView
                 android:id="@+id/med_pop_8"
                 android:layout_width="0dp"
                 android:layout_weight="0.25"
-                android:layout_height="match_parent" />
+                android:layout_marginStart="12dp"
+                android:layout_height="match_parent"
+                app:type_note="MOYENNE" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
