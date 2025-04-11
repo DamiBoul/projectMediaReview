@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text sizes -->
+    <dimen name="tt_grand_titre">36sp</dimen>
+    <dimen name="tt_titre">24sp</dimen>
+    <dimen name="tt_sous_titre">16sp</dimen>
+    <dimen name="tt_nombre">32sp</dimen>
+    <dimen name="tt_corps">12sp</dimen>
+    <dimen name="tt_legende">10sp</dimen>
+
+    <!-- Media images -->
+    <dimen name="media_image_height_s">100dp</dimen>
+    <dimen name="media_image_width_s">75dp</dimen>
+    <dimen name="media_image_height_m">200dp</dimen>
+    <dimen name="media_image_width_m">150dp</dimen>
+    <dimen name="media_image_height_l">300dp</dimen>
+    <dimen name="media_image_width_l">225dp</dimen>
+
+    <!-- Notes -->
+    <dimen name="note_height_s">20dp</dimen>
+    <dimen name="note_width_s">150dp</dimen>
+
+    <!-- Écran principal -->
+    <!-- Medias populaires -->
+    <dimen name="principal_populaires_height">200dp</dimen>
+</resources>
