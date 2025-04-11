@@ -39,4 +39,10 @@ public class MediasPopulairesView extends FrameLayout {
         listeMediaPopulaire.add(findViewById(R.id.med_pop_7));
         listeMediaPopulaire.add(findViewById(R.id.med_pop_8));
     }
+
+    public MediaAnnoteView getMediaByIdx(int idx){return listeMediaPopulaire.get(idx);}
+
+    public void searchMediaPopulaire(){
+        listeMediaPopulaire.iterator(); //TODO
+    }
 }

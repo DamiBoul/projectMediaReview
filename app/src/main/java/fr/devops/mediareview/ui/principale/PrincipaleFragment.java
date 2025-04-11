@@ -10,10 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import fr.devops.mediareview.R;
-import fr.devops.mediareview.composants.mediaImage.MediaAnnoteView;
 import fr.devops.mediareview.databinding.FragmentPrincipaleBinding;
-import fr.devops.mediareview.ui.principale.PrincipaleViewModel;
 import fr.devops.mediareview.ui.principale.composants.MediasPopulairesView;
 
 public class PrincipaleFragment extends Fragment {
