@@ -8,6 +8,7 @@ import java.util.List;
 
 import fr.devops.mediareview.api.IGDBApiService;
 import fr.devops.mediareview.api.RetrofitClient;
+import fr.devops.mediareview.config.ApiConfig;
 import fr.devops.mediareview.model.Game;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -44,7 +45,12 @@ public class HomeViewModel extends ViewModel {
         RequestBody body = RequestBody.create(MediaType.parse("application/json"), jsonBody);
 
         // On fait notre appel API
-        Call<List<Game>> call = apiService.getGameDetails(body);
+        Call<List<Game>> call = apiService.getGameDetails(
+            ApiConfig.getClientId(),
+            ApiConfig.getAuthorization(),
+            body
+        );
+
         call.enqueue(new Callback<List<Game>>() {
             @Override
             public void onResponse(Call<List<Game>> call, Response<List<Game>> response) {
