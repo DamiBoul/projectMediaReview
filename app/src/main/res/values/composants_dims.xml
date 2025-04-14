@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Bordure -->
-    <dimen name="bordure_s">12dp</dimen>
-    <dimen name="bordure_m">24dp</dimen>
-    <dimen name="bordure_l">36dp</dimen>
+    <!-- Marges -->
+    <dimen name="marge_s">12dp</dimen>
+    <dimen name="marge_m">24dp</dimen>
+    <dimen name="marge_l">36dp</dimen>
 
     <!-- Text sizes -->
     <dimen name="tt_grand_titre">36sp</dimen>

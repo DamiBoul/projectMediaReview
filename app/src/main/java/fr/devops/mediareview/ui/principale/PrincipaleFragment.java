@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import fr.devops.mediareview.composants.avis.AvisView;
 import fr.devops.mediareview.databinding.FragmentPrincipaleBinding;
 import fr.devops.mediareview.ui.principale.composants.MediasPopulairesView;
 
@@ -25,10 +26,9 @@ public class PrincipaleFragment extends Fragment {
         binding = FragmentPrincipaleBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPrincipale;
-        principaleViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
         final MediasPopulairesView mediasPopulairesView = binding.principaleMediaPopulaire;
+
+        final AvisView avisViewTest = binding.principaleAvisTest;
 
         return root;
     }
