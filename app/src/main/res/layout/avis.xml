@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fr.devops.mediareview.composants.mediaImage.MediaImageView
+        android:id="@+id/avis_media_image"
+        android:layout_width="@dimen/media_image_width_s"
+        android:layout_height="@dimen/media_image_height_s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fr.devops.mediareview.composants.badgeUtilisateur.BadgeUtilisateurView
+        android:id="@+id/avis_badge_utilisateur"
+        android:layout_width="@dimen/badge_utilisateur_width"
+        android:layout_height="@dimen/badge_utilisateur_height"
+        android:layout_marginTop="@dimen/marge_s"
+        android:layout_marginStart="@dimen/marge_s"
+        app:layout_constraintStart_toEndOf="@id/avis_media_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fr.devops.mediareview.composants.notes.NotesEtoilesView
+        android:id="@+id/avis_note"
+        android:layout_width="@dimen/note_width_s"
+        android:layout_height="@dimen/note_height_s"
+        android:layout_marginTop="@dimen/marge_s"
+        android:layout_marginStart="@dimen/marge_s"
+        app:layout_constraintStart_toEndOf="@id/avis_media_image"
+        app:layout_constraintTop_toBottomOf="@id/avis_badge_utilisateur"/>
+
+    <TextView
+        android:id="@+id/avis_corps_de_texte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_m"
+        android:layout_marginEnd="@dimen/marge_m"
+        android:layout_marginTop="@dimen/marge_s"
+        android:textSize="@dimen/tt_corps"
+        android:text="@string/lorem_ipsum"
+        app:layout_constraintTop_toBottomOf="@id/avis_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/avis_media_image" />
+
+    <TextView
+        android:id="@+id/avis_deplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avis_deplier"
+        app:layout_constraintEnd_toEndOf="@+id/avis_corps_de_texte"
+        app:layout_constraintTop_toBottomOf="@+id/avis_corps_de_texte"
+        android:layout_marginTop="@dimen/marge_s" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

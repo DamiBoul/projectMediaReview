@@ -22,8 +22,8 @@
 
     <fr.devops.mediareview.composants.badgeUtilisateur.BadgeUtilisateurView
         android:id="@+id/badge"
-        android:layout_width="120dp"
-        android:layout_height="24dp"
+        android:layout_width="@dimen/badge_utilisateur_height"
+        android:layout_height="@dimen/badge_utilisateur_width"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/text_slideshow"
         app:layout_constraintEnd_toEndOf="parent"
