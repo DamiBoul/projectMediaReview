@@ -30,11 +30,13 @@ public class AvisView extends FrameLayout {
     public AvisView(Context context) {
         super(context);
         this.initViews(context);
+        this.initObs();
     }
 
     public AvisView(Context context, AttributeSet attrs){
         super(context, attrs);
         this.initViews(context);
+        this.initObs();
     }
 
     private void initViews(Context context){
