@@ -2,6 +2,7 @@ package fr.devops.mediareview.composants.mediaImage;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,19 +21,30 @@ public class MediaImageView extends FrameLayout {
 
     public MediaImageView(Context context) {
         super(context);
-        this.init(context);
+        this.initViews(context);
+        this.initObs();
     }
 
     public MediaImageView(Context context, AttributeSet attrs){
         super(context, attrs);
-        this.init(context);
+        this.initViews(context);
+        this.initObs();
     }
 
-    private void init(Context context){
+    private void initViews(Context context){
         inflate(context, R.layout.media_image_layout, this);
         this.titreMedia = findViewById(R.id.titre_media);
         this.overlay = findViewById(R.id.dark_overlay);
         this.jeu = findViewById(R.id.imageView_media);
+    }
+
+    private void initObs(){
+        this.jeu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                toggleOverlayVisibility();
+            }
+        });
     }
 
     public void toggleOverlayVisibility(){

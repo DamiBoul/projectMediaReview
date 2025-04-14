@@ -19,6 +19,7 @@
     <string name="menu_principale">Écran principal</string>
     <string name="principale_populaire">Populaire en ce moment</string>
 
+    <string name="placeholder_name">Placeholder name</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam leo. Nam facilisis tortor faucibus, porttitor risus quis, tincidunt mi. Donec fermentum urna sed diam facilisis, sit amet tempus ex congue.
 \n
 Etiam non mauris dapibus, semper lorem et, facilisis arcu. Nunc id condimentum tellus. Quisque nec dolor mi. Curabitur gravida elit id posuere facilisis. Donec efficitur enim nec mollis ornare. Cras dui ante, feugiat quis risus ac, malesuada condimentum ipsum. Proin eu nisl ultricies, tempor ligula id, vehicula augue. Pellentesque convallis suscipit tempus. </string>

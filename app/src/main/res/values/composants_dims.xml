@@ -23,7 +23,7 @@
 
     <!-- Badge utilisateur -->
     <dimen name="badge_utilisateur_height">24dp</dimen>
-    <dimen name="badge_utilisateur_width">120dp</dimen>
+    <dimen name="badge_utilisateur_width">200dp</dimen>
 
     <!-- Notes -->
     <dimen name="note_height_s">20dp</dimen>

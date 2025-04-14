@@ -36,6 +36,8 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         android:visibility="invisible"
+        android:text="@string/placeholder_name"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_media"
         app:layout_constraintEnd_toEndOf="@+id/imageView_media"
         app:layout_constraintStart_toStartOf="@+id/imageView_media"
