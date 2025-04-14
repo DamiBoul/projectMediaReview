@@ -11,6 +11,10 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
+    <!-- Composants -->
+    <string name="avis_deplier">Déplier</string>
+    <string name="avis_replier">Replier</string>
+
     <!-- Strings pour l'écran principal. -->
     <string name="menu_principale">Écran principal</string>
     <string name="principale_populaire">Populaire en ce moment</string>

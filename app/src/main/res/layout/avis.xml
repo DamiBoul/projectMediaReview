@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -41,5 +42,14 @@
         app:layout_constraintTop_toBottomOf="@id/avis_note"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/avis_media_image" />
+
+    <TextView
+        android:id="@+id/avis_deplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avis_deplier"
+        app:layout_constraintEnd_toEndOf="@+id/avis_corps_de_texte"
+        app:layout_constraintTop_toBottomOf="@+id/avis_corps_de_texte"
+        android:layout_marginTop="@dimen/bordure_s" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
