@@ -30,12 +30,7 @@ public class GalleryFragment extends Fragment {
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         final MediaImageView mediaImageView = binding.imageMedia;
         galleryViewModel.getTitreMedia().observe(getViewLifecycleOwner(), mediaImageView::setTitreMedia);
-        mediaImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view){
-                    mediaImageView.toggleOverlayVisibility();
-                }
-        });
+
         final NotesEtoilesView notesEtoilesView = binding.note;
         galleryViewModel.getNote().observe(getViewLifecycleOwner(), notesEtoilesView::setEvaluation);
         notesEtoilesView.setOnClickListener(new View.OnClickListener() {
